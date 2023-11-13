@@ -1,0 +1,107 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #226688;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+
+  font-family: monospace !important;
+
+  #app {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+  }
+
+  button {
+    font-size: 14px;
+  }
+
+  .input_add-task {
+    padding: 10px;
+    width: 250px;
+    color: black;
+
+    margin-bottom: 15px;
+    background-color: white;
+  }
+
+  .btn__submit {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    background-color: #ffffff;
+    color: black;
+  }
+
+  .clear-completed__btn {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    background-color: #ffffff;
+    color: black;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+
+  .clear-all__btn {
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+
+    background-color: #ffffff;
+    color: black;
+
+    cursor: pointer;
+  }
+
+  .tasks_list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    width: 600px;
+    gap: 10px;
+
+    li {
+      list-style: none;
+      row-gap: 20px;
+      column-gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+
+
+      padding: 12px 15px 12px 15px;
+      border: 1px solid grey;
+      border-radius: 3px;
+      background-color: aliceblue;
+      margin-bottom: 10px;
+    }
+  }
+}
+

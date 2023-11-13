@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo Native TS</title>
+    <link rel="stylesheet" href="./src/style.scss">
+  </head>
+  <body>
+    <div id="app">
+      <form onsubmit="return false;" class="todoForm">
+        <input class="input_add-task" type="text">
+        <button class="btn__submit">Добавить</button>
+      </form>
+      <div class="btns__format">
+        <button class="clear-all__btn">Удалить все тудушки</button>
+        <button class="clear-completed__btn">Удалить завершенные</button>
+      </div>
+      <ul class="tasks_list"></ul>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
