@@ -1,4 +1,4 @@
-import { Task } from "./main.ts";
+import {Task} from "./types/types.ts";
 
 const app: HTMLDivElement | null = document.getElementById('app') as HTMLDivElement;
 
@@ -6,7 +6,11 @@ export function todoList(tasks: Task[]): void {
     if (app) {
         const ul: HTMLUListElement | null = document.querySelector('.tasks_list');
         if (ul) {
-            ul.innerHTML = '';
+            if (ul.innerHTML.trim() === '') {
+                ul.innerHTML = 'Список пуст';
+            } else {
+                ul.innerHTML = '';
+            }
 
             if (tasks.length === 0) {
                 const emptyMessage = document.createElement('li');
