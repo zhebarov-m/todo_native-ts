@@ -1,11 +1,7 @@
 import {todoList} from "./TodoList.ts";
-import {addTask, tasks} from "./AddTask.ts";
-import {deleteAllTasks} from "./RemoveAllTasks.ts";
-export interface Task {
-    id: number;
-    text: string;
-    completed: boolean;
-}
+import {addTask, tasks} from "./Todo.ts";
+import {deleteAllTasks} from "./Todo.ts";
+
 console.log('Script loaded')
 document.addEventListener('DOMContentLoaded', () => {
     const inputAddTask: HTMLInputElement | null = document.querySelector('.input_add-task');
